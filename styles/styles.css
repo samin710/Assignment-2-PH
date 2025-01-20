@@ -169,7 +169,7 @@ main{
     background-image:url('../assets/bg.png');
 }
 .std-curr{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .stand{
     font-weight: bold;
@@ -178,20 +178,41 @@ main{
 }
 .card-container{
     max-width: 1160px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin:80px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 28px;
 }
 .card-1{
-    max-width: 368px;
+    max-width: 578px;
     border: 1px solid #7FDBD03F;
     border-radius: 18.86px;
-    background: linear-gradient(to bottom, #def5ff, #FFFFFF);
+    background: linear-gradient(to bottom, #e2f6ff, #FFFFFF);
+    text-align: center;
+    justify-items: center;
+}
+.card-2{
+    max-width: 578px;
+    border: 1px solid #C6794D3F ;
+    border-radius: 18.86px;
+    background: linear-gradient(to bottom, #fcf5e6, #FFFFFF);
+    text-align: center;
+    justify-items: center;
+}
+.card-3{
+    max-width: 578px;
+    border: 1px solid #C499C83F;
+    border-radius: 18.86px;
+    background: linear-gradient(to bottom, #eee6fa, #FFFFFF);
     text-align: center;
     justify-items: center;
 }
 .card-img{
     max-width: 115px;
     margin-top: 52px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .card-img img{
     width: 100%;
@@ -201,6 +222,8 @@ main{
     font-size: 1.5rem;
     color: #202020;
     margin-top: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .card-des{
     font-family:"Raleway";
@@ -210,10 +233,37 @@ main{
     margin-top: 30px;
     margin-bottom: 32px;
     max-width: 285px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.read-more{
+.read-more-1{
     font-weight: bold;
     font-size: 1rem;
     color: #64C8FF ;
     margin-bottom: 32px;
+}
+.read-more-2{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #F0AA00 ;
+    margin-bottom: 32px;
+}
+.read-more-3{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #8700FF ;
+    margin-bottom: 32px;
+}
+/* standard responsive */
+@media screen and (max-width: 576px) {
+.card-container{
+    margin: 8px 15px;
+    grid-template-columns: repeat(1,1fr);
+    gap: 0px;
+}
+.stand{
+    font-size: 1.2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 }
