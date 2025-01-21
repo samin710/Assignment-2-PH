@@ -296,12 +296,13 @@ main{
 
 /* story styles */
 .story-container{
-    border: 1px solid black;
+    margin: 0px;
+    /* border: 1px solid black; */
     background: linear-gradient(0deg, #fea10156, #ffffff00);
 }
 .story-img-container{
     max-width: 1160px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 60px auto;
     /* display: grid;
     grid-template-columns: repeat(2, 2fr); */
@@ -311,7 +312,7 @@ main{
 
 }
 .big-card{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     max-width: 540px;
     border-radius: 16px;
     background-color: white;
@@ -324,10 +325,10 @@ main{
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
-.big-card-text{
+/* .big-card-text{
     border: 1px solid black;
 
-}
+} */
 .big-card-title{
     max-width: 450px;
     font-weight: bold;
@@ -351,7 +352,8 @@ main{
 }
 .small-four-cards{
     /* background-color: white; */
-    border: 1px solid black;
+    max-width: 699px;
+    /* border: 1px solid black; */
     border-radius: 16px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -359,10 +361,10 @@ main{
 }
 .small-card{
     max-width: 290px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 16px;
     background-color: white;
-
+    position: relative;
 }
 .small-four-cards img{
     width: 100%;
@@ -388,6 +390,7 @@ main{
     margin-top: -25px;
     border-radius: 45px;
     margin-left: 37px;
+    margin-right: 325px;
 }
 .float-box-1 p{
     color: white;
@@ -404,6 +407,7 @@ main{
     margin-top: -25px;
     border-radius: 45px;
     margin-left: 37px;
+    margin-right: 78px;
 }
 .float-box-2 p{
     color: white;
@@ -419,6 +423,7 @@ main{
     margin-top: -25px;
     border-radius: 45px;
     margin-left: 37px;
+    margin-right: 78px;
 }
 .float-box-3 p{
     color: white;
@@ -434,6 +439,7 @@ main{
     margin-top: -25px;
     border-radius: 45px;
     margin-left: 37px;
+    margin-right: 78px;
 }
 .float-box-4 p{
     color: white;
@@ -449,6 +455,7 @@ main{
     margin-top: -25px;
     border-radius: 45px;
     margin-left: 37px;
+    margin-right: 78px;
 }
 .float-box-5 p{
     color: white;
@@ -460,6 +467,22 @@ main{
     /* border: 1px solid black; */
     max-width: 167px;
     margin: 80px auto;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
+    padding-bottom: 60px;
 }
 /* story responsive */
+@media screen and (max-width: 576px) {
+.big-card{
+    display: none;
+}
+.story-title{
+    font-size: 1.2rem;
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+.small-four-cards{
+margin-left: 8px;
+margin-right: 10px; 
+gap: 8px; 
+}
+}
