@@ -168,9 +168,9 @@ align-items: center;
 main{
     background-image:url('../assets/bg.png');
 }
-.std-curr{
-    /* border: 1px solid black; */
-}
+/* .std-curr{
+    border: 1px solid black;
+} */
 .stand{
     font-weight: bold;
     font-size: 2.5rem;
@@ -253,6 +253,29 @@ main{
     font-size: 1rem;
     color: #8700FF ;
     margin-bottom: 32px;
+}
+.two-arrow{
+    /* border: 1px solid black; */
+    max-width: 130px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 70px auto;
+    margin-bottom: 60px;
+}
+.left-arrow, .right-arrow{
+    /* border: 1px solid black; */
+    max-width: 60px;
+    height: 60px;
+    background-color: #FEA301;
+    border-radius: 50%;
+}
+.fa-solid{
+    color: white;
+    position: absolute;
+    padding: 18px 21px;
+    font-weight: bolder;
+    font-size: 1.5rem ;
 }
 /* standard responsive */
 @media screen and (max-width: 576px) {
