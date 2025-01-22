@@ -169,7 +169,7 @@ align-items: center;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 8px 15px;
+        margin: 8px 17px;
         gap: 20px ;
         padding: 18px 10px;
     }
@@ -492,9 +492,9 @@ main{
     margin-bottom: 10px;
 }
 .small-four-cards{
-margin-left: 8px;
-margin-right: 10px; 
-gap: 8px; 
+    margin-left: 8px;
+    margin-right: 10px; 
+    gap: 8px; 
 }
 }
 /* footer styles */
@@ -540,9 +540,9 @@ gap: 8px;
     align-items: center;
     gap: 10px;
 }
-.footer-des{
-    /* border: 1px solid black; */
-}
+/* .footer-des{
+    border: 1px solid black;
+} */
 /* .footer-part-1{
     border: 1px solid black;
 } */
